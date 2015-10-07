@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>apple-mobile-web-app-capableのてすと</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="apple-mobile-web-app-capableのてすと">
+    <!--<script src="./js/lib/js.cookie.js"></script>-->
+    <script>
+      // var index = +Cookies.get("AMWAC-index") || 1;
+      var index = +document.cookie.replace(/^.*AMWAC-index=(\d+).*/,"$1") || 1;
+      
+      window.onload = function(){
+        var konsole = document.getElementById("konsole");
+        konsole.innerHTML = index + "回目";
+      };
+      
+      // Cookies.set("AMWAC-index", index+1);
+      document.cookie = "AMWAC-index="+ (index+1) + ";";
+    </script>
+    <style>
+      body {
+        font-family: Futura, YuGothic, Meiryo, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="ttl">apple-mobile-web-app-capableを設定するとcookieが効かない？</h1>
+      <p id="konsole"></p>
+      <p>
+        apple-mobile-web-app-capableを設定するとcookieが効かないっぽい。<br>
+        ホーム画面に追加した場合。<br>
+        <br>
+        <!-- もしかするとcookieの問題ではなく、js.cookie.jsの問題かもしれない。<br> -->
+        <!-- 面倒くさいのでこれ以上は調査しない。<br> -->
+        js.cookie.js(ライブラリ)の問題かとも思ったけど、そういうわけでもないみたい。<br>
+        iOS9.0.1とiOS8.4で確認。<br>
+        <br>
+        document.cookieに何も入ってないっぽいので、まあ、仕様ということか。
+      </p>
+    </div>
+  </body>
+</html>
