@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>apple-touch-iconのてすと</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="apple-touch-iconのてすと">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./img/icon_a.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/icon_a.png">
+    <link id="apple-touch-icon" rel="apple-touch-icon" href="./img/icon_a.png">
+    <script src="./js/lib/js.cookie.js"></script>
+    <script>
+      var icon_a = "iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAA2FJREFUeAHt0gENACAMBDFALGrxBAkyLp2Dv3Xes+9wCkQKrMgOMxT4BYAGIVUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO415xCkEmGzbZYQAAAAASUVORK5CYII="
+      var icon_b = "iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAA2FJREFUeAHt0gENACAMBDFA7Pw7gAQZl87B37rvzF1OgUiBE9lhhgK/ANAgpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzFAM5AqAHTqncYAzUCqANCpdxoDNAOpAkCn3mkM0AykCgCdeqcxQDOQKgB06p3GAM1AqgDQqXcaAzQDqQJAp95pDNAMpAoAnXqnMUAzkCoAdOqdxgDNQKoA0Kl3GgM0A6kCQKfeaQzQDKQKAJ16pzEPu+cEMtzMQJQAAAAASUVORK5CYII="
+      var icon_c = "iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAA2FJREFUeAHt0gENACAMBDFALGrxBAkyLp2Dv3Xuc+9wCkQKrMgOMxT4BYAGIVUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO40BmoFUAaBT7zQGaAZSBYBOvdMYoBlIFQA69U5jgGYgVQDo1DuNAZqBVAGgU+80BmgGUgWATr3TGKAZSBUAOvVOY4BmIFUA6NQ7jQGagVQBoFPvNAZoBlIFgE690xigGUgVADr1TmOAZiBVAOjUO415wvcEmAvmJlAAAAAASUVORK5CYII="
+      var icon = [icon_a, icon_b, icon_c];
+      
+      var index = +Cookies.get("ATIT-index") || 0;
+      
+      var base64code = "data:image/png;base64," + icon[index];
+      
+      var appleTouchIcon = document.getElementById("apple-touch-icon");
+      appleTouchIcon.href = base64code;
+      
+      window.onload = function(){
+        var iconImg = document.getElementById("icon-img");
+        iconImg.src = base64code;
+      };
+      
+      var next = (index < icon.length - 1) ? index + 1 : 0;
+      Cookies.set("ATIT-index", next);
+      
+    </script>
+    <style>
+      body {
+        font-family: Futura, YuGothic, Meiryo, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="ttl">apple-touch-iconのてすと</h1>
+      <p>base64にしてみたけどこの問題には関係なさそう。</p>
+      <img id="icon-img" src="">
+      <p>
+        apple-mobile-web-app-capableを設定するとホーム画面に追加したアイコンが更新されなくなっている模様。<br>
+        あとcookieも上手く使えてないっぽい？<br>
+        iOS9.0.1とiOS8.4で確認。<br>
+        <br>
+        「ホーム画面に追加」して、アクセスしたり戻ったりして確認してください。<br>
+        アイコンの色とページ上の四角の色が、cookieを見て、アクセスするたびに変わる（３色をループする）ようになってますが、
+        apple-mobile-web-app-capableありのほうは、上手くいきません。<br>
+        たしかiOS7のときはちゃんと動いてたはず。
+      </p>
+      <p><a href="./">apple-mobile-web-app-capableあり。</a></p>
+      <p><a href="./off.html">apple-mobile-web-app-capableなし。</a></p>
+    </div>
+  </body>
+</html>
